@@ -1,3 +1,79 @@
-body{
-  background-color: green;
+body {
+  /* background-image: url("/images/sands.jpg"); */
+  background-image: url("/images/demo2.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html, body {
+  margin: 0;
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: auto 1em auto 1em; */
+  color: #F7F7F7;
+
+
+  /* justify-content: center; */
+}
+
+#header a{
+  text-decoration: none;
+}
+
+#header p{
+  font-size: 1em;
+  line-height: 0.8em;
+  margin: 1em;
+  color: #F7F7F7;
+}
+
+.menu a{
+  font-size: 0.6em;
+  margin: auto 5em;
+  text-decoration: none;
+  color: #F7F7F7;
+
+}
+
+/* EXPERIMENTAL */
+/* #header h3{
+  font-size: 5em;
+  text-align: center;
+  margin: 25vh;
+} */
+
+/* Title Section */
+#title-section{
+  margin: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-logo{
+  font-size: 10em;
+  line-height: 0.8em;
+  margin: 0;
+  color: #F7F7F7;
+}
+
+.spacer{
+  padding: 8em;
+}
+
+#content1-section{
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.c1d1{
+  margin: 5em;
+  font-size: 2em;
+  color: #F7F7F7;
+
 }
