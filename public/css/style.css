@@ -9,7 +9,21 @@ body {
 
 html, body {
   margin: 0;
+
+  /* Disable Scroll Bounce! */
+  height: 100%;
+  overflow: hidden;
 }
+
+
+#main-container {/* DISABLE SCROLL BOUNCE! */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}/* DISABLE SCROLL BOUNCE! */
 
 #header{
   display: flex;
@@ -27,9 +41,11 @@ html, body {
 }
 
 #header p{
+  /* LOGO */
   font-size: 1em;
+  font-weight: bold;
   line-height: 0.8em;
-  margin: 1em;
+  margin: 1.5em;
   color: #F7F7F7;
 }
 
@@ -67,14 +83,24 @@ html, body {
   /* padding: 8em; */
 }
 
+.gradient-top{
+  padding-top: 5em;
+  background: rgb(255,216,155);
+  background: linear-gradient(180deg, rgba(255,216,155,0) 20%, rgba(0,0,0,0.500437675070028) 80%);
+}
+
 #content1-section{
 
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .c1d1{
-  margin: 5em;
+  margin: 0 5em 5em 5em;
   font-size: 2em;
   color: #F7F7F7;
 
+}
+
+.c1d1 p{
+  margin: 0;
 }
