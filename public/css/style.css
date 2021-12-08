@@ -47,6 +47,17 @@ html, body {
     overflow: auto;
 }/* DISABLE SCROLL BOUNCE! */
 
+img, .title-logo{
+/* cursor: default; */
+
+user-drag: none;
+-webkit-user-drag: none;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+
 #header{
   display: flex;
   justify-content: space-between;
@@ -89,6 +100,8 @@ html, body {
   background-color: yellow;
   color: black;
   padding-top: 50em;
+
+  padding-bottom: 1000em;
 }
 
 /* EXPERIMENTAL */
