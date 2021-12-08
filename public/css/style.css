@@ -1,14 +1,36 @@
+
+/* ALL THE FONTS!!
+font-family: 'Aldrich', sans-serif; menu logo
+font-family: 'Allerta Stencil', sans-serif; nah
+font-family: 'Bungee Hairline', cursive; logo
+font-family: 'Fredericka the Great', cursive; no
+font-family: 'Geo', sans-serif; menu logo no Title
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Major Mono Display', monospace; logo
+font-family: 'Megrim', cursive; logo
+font-family: 'Michroma', sans-serif;
+font-family: 'Quantico', sans-serif; menu
+font-family: 'Raleway Dots', cursive;
+font-family: 'Russo One', sans-serif;
+font-family: 'Zen Kurenaido', sans-serif; logo menu
+ALL THE FONTS!!! */
+
+
 body {
   background-image: url("/images/sands.jpg");
   /* background-image: url("/images/demo2.gif"); */
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
 
+  font-family: 'Michroma', sans-serif;
+
+}
 
 html, body {
   margin: 0;
+
 
   /* Disable Scroll Bounce! */
   height: 100%;
@@ -42,6 +64,8 @@ html, body {
 
 #header p{
   /* LOGO */
+  font-family: 'Major Mono Display', monospace;
+
   font-size: 1em;
   font-weight: bold;
   line-height: 0.8em;
@@ -49,12 +73,22 @@ html, body {
   color: #F7F7F7;
 }
 
+
 .menu a{
   font-size: 0.6em;
   margin: auto 5em;
   text-decoration: none;
   color: #F7F7F7;
+  text-align: center;
+  padding: 2em;
 
+  transition: all ease-out 0.4s;
+}
+
+.menu a:hover{
+  background-color: yellow;
+  color: black;
+  padding-top: 50em;
 }
 
 /* EXPERIMENTAL */
@@ -66,17 +100,55 @@ html, body {
 
 /* Title Section */
 #title-section{
-  margin: 20vh;
+  margin: 8em 18em 4em 18em;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .title-logo{
+  font-family: 'Aldrich', sans-serif;
+
   font-size: 10em;
   line-height: 0.8em;
   margin: 0;
   color: #F7F7F7;
+  text-align: center;
+}
+
+.title-sub{
+
+  color: #F7F7F7;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.down-arrow{
+  filter: invert(1);
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+  width: 3em;
+
+  transform: scale(1);
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
 
 .spacer{
@@ -84,9 +156,15 @@ html, body {
 }
 
 .gradient-top{
-  padding-top: 5em;
+  padding-top: 10em;
   background: rgb(255,216,155);
   background: linear-gradient(180deg, rgba(255,216,155,0) 20%, rgba(0,0,0,0.500437675070028) 80%);
+}
+
+.gradient-bottom{
+  padding-bottom: 10em;
+  background: rgb(255,216,155);
+  background: linear-gradient(0deg, rgba(255,216,155,0) 20%, rgba(0,0,0,0.500437675070028) 80%);
 }
 
 #content1-section{
@@ -95,7 +173,7 @@ html, body {
 }
 
 .c1d1{
-  margin: 0 5em 5em 5em;
+  margin: 0 5em 0 5em;
   font-size: 2em;
   color: #F7F7F7;
 
