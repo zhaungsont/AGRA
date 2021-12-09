@@ -82,8 +82,8 @@ user-select: none;
   line-height: 0.8em;
   margin: 1.5em;
   color: #F7F7F7;
-}
 
+}
 
 .menu a{
   font-size: 0.6em;
@@ -176,7 +176,13 @@ button{
 }
 
 #expBtn:hover{
-  right: 11em;
+  /* right: 11em; */
+  background-color: black;
+  color: #fefefe;
+  border: solid;
+  border-width: 1px;
+  border-color: #fefefe;
+  right: 9.9em;
 }
 
 
@@ -276,4 +282,26 @@ button{
 
 .c1d1 > p{
   margin: 0;
+}
+
+#content2-section{
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.flexbox{
+  display: flex;
+  justify-content: center;
+  padding: 0 5em 0 5em;
+}
+
+.c2d1{
+  margin: 0 2em 0 2em;
+  font-size: 1.5em;
+  color: #F7F7F7;
+  text-align: justify;}
+
+canvas {
+  margin: 0 auto;
+  display: block;
 }
