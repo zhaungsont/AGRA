@@ -15,7 +15,10 @@ app.get("/contact", function(req, res){
   res.sendFile(__dirname + "/src/contact.html");
 })
 
-
+app.get("/:customListName",function(req,res){
+  const customListName = req.params.customListName;
+  res.sendFile(__dirname + "/src/404.html");
+});
 
 
 

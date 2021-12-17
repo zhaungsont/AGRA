@@ -33,19 +33,20 @@ html, body {
 
 
   /* Disable Scroll Bounce! */
-  height: 100%;
-  overflow: hidden;
+  /* height: 100%; */
+  /* overflow: hidden; */
 }
 
-
-#main-container {/* DISABLE SCROLL BOUNCE! */
+/* DISABLE SCROLL BOUNCE! */
+/* #main-container {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     overflow: auto;
-}/* DISABLE SCROLL BOUNCE! */
+} */
+/* DISABLE SCROLL BOUNCE! */
 
 img, .title-logo{
 /* cursor: default; */
@@ -171,7 +172,7 @@ button{
 #expBtn{
   display: block;
   position: absolute;
-  right: 10em;
+  right: 16em;
   transition: ease-out 0.1s;
 }
 
@@ -182,7 +183,7 @@ button{
   border: solid;
   border-width: 1px;
   border-color: #fefefe;
-  right: 9.9em;
+  /* right: 9.9em; */
 }
 
 
@@ -256,13 +257,13 @@ button{
 }
 
 .gradient-top{
-  padding-top: 10em;
+  padding-top: 11em;
   background: rgb(255,216,155);
   background: linear-gradient(180deg, rgba(255,216,155,0) 20%, rgba(0,0,0,0.500437675070028) 80%);
 }
 
 .gradient-bottom{
-  padding-bottom: 10em;
+  padding-bottom: 11em;
   background: rgb(255,216,155);
   background: linear-gradient(0deg, rgba(255,216,155,0) 20%, rgba(0,0,0,0.500437675070028) 80%);
 }
@@ -273,7 +274,7 @@ button{
 }
 
 .c1d1{
-  margin: 0 5em 0 5em;
+  margin: 0 8em 5em 8em;
   font-size: 1.5em;
   color: #F7F7F7;
   text-align: justify;
@@ -304,4 +305,19 @@ button{
 canvas {
   margin: 0 auto;
   display: block;
+}
+
+.flex-card{
+  margin: 5em 12em 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5em;
+
+  text-align: justify;
+  color: #F7F7F7;
+}
+
+.card-img{
+  width: 400px;
 }

@@ -9,6 +9,8 @@
   "author": "Michael Chuang",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "aos": "^2.3.4",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
   }
 }

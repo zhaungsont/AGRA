@@ -10,6 +10,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Aldrich&family=Allerta+Stencil&family=Bungee+Hairline&family=Fredericka+the+Great&family=Geo:ital@0;1&family=JetBrains+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Libre+Barcode+39+Text&family=Major+Mono+Display&family=Megrim&family=Michroma&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Raleway+Dots&family=Russo+One&family=Zen+Kurenaido&display=swap"
     rel="stylesheet">
+
+  <!-- AOS CDN   -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- Mobile Port -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
   <title>AGRA</title>
@@ -43,7 +50,7 @@
 
     <section id="title-section">
       <div class="">
-        <h1 class="title-logo">AG<br>RA</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000" class="title-logo">AG<br>RA</h1>
         <p class="title-sub">World's First Hyper-ML Architecture is Here.</p>
       </div>
       <div class="spacer">
@@ -51,14 +58,14 @@
       </div>
     </section>
 
-    <a href="#content1-section">
+    <a href="#arrow-destination">
       <img class="down-arrow" src="/images/arrow-down.png" alt="down arrow">
     </a>
 
-    <section class="gradient-top"></section>
+    <section id="arrow-destination" class="gradient-top"></section>
 
     <section id="content1-section">
-      <div class="c1d1">
+      <div   class="c1d1">
         <p>AGRA™ is the 4th Generation Nano-based Sampling Architecture that Halves Build Time, and Quadruples Confident Yields Based on 2.5 Trillion ML Datasets.
           We have revolutionized nano-based sampling by dramatically accelerating interation process, 20 years ahead of the competition.</p>
         <!-- Trigger/Open The Modal -->
@@ -70,17 +77,59 @@
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit
               amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
               adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
             <img src="/images/guy.gif" alt="guy">
           </div>
 
         </div>
       </div>
+
+      <div class="c1d2">
+
+        <div data-aos="fade-right" class="flex-card">
+          <div class="">
+            <h1>Laser Etched</h1>
+            <p>
+              The 4th generation manufacturing process of nano sampling adopts high-precision laser-etching technology throughout its entire production, which is 4x more accurate than industry standard.
+            </p>
+          </div>
+
+          <img class="card-img" src="/images/laser.jpg" alt="laser">
+        </div>
+
+        <div data-aos="fade-left" class="flex-card">
+          <img class="card-img" src="/images/engineering.jpg" alt="guy">
+          <div class="">
+            <h1>Fully Accelerated</h1>
+            <p>
+              The 4th generation manufacturing process of nano sampling adopts high-precision laser-etching technology throughout its entire production, which is 4x more accurate than industry standard.
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="fade-right" class="flex-card">
+          <div class="">
+            <h1>Patented!</h1>
+            <p>
+              And of course we patented it.
+            </p>
+          </div>
+          <img class="card-img" src="/images/thumb-guy.jpg" alt="guy">
+        </div>
+
+      </div>
+
+
+
+
+
+
+
     </section>
 
     <section class="gradient-bottom"></section>
@@ -91,7 +140,7 @@
 
       <div class="flexbox">
 
-        <div class="c2d1">
+        <div  class="c2d1">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
         <canvas id="myChart" style="width:100%;max-width:500px"></canvas>
@@ -109,6 +158,10 @@
   </div>
 
   <script type="text/javascript">
+    //Initialize Animation on Scroll
+    AOS.init();
+
+
     // Get the modal
     var modal = document.getElementById("myModal");
 
@@ -164,9 +217,29 @@
       }
     });
 
-    // jQUERY?
-    $(document).keydown(function(event) {
-      $("h1").text(event.key);
+    nameArray = ["AG<br />RA", "AG<br />RA", "AG<br />RA", "ME<br>TA", "DOO<br>DOO", "BIG<br />CHUNGUS", "<h1 style='color:orange; font-size: 200px'>Dr. Heinz<br />Doofenshmirtz</h1>", "<h1 style='color: red; font-size: 100px; text-align: right; line-height: 1em;'>LIFE IS MEANINGLESS,<br />EVERY SECOND WE STEP CLOSER TO DEATH</h1>"]
+    let i = 0;
+
+    // function changeTitle(){
+    //   $("h1").html(nameArray[i]);
+    //   if(i == nameArray.length - 1){
+    //     i = 0;
+    //   }else{
+    //     i++;
+    //   }
+    // }
+
+    // setInterval(changeTitle, 900);
+
+    $(".title-logo").on("click", function(event) {
+
+      $(".title-logo").html(nameArray[i]);
+        if(i == nameArray.length - 1){
+          i = 0;
+        }else{
+          i++;
+        }
+
     });
   </script>
 
