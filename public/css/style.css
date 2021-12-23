@@ -321,3 +321,50 @@ canvas {
 .card-img{
   width: 400px;
 }
+
+.c1d3{
+  margin-top: 7em;
+}
+
+.testimonial{
+  color: #F7F7F7;
+  text-align: center;
+  margin: auto 30% 3em;
+}
+
+.testimonial > h1{
+  /* font-size: 2.5em; */
+}
+
+
+.ppl-flex{
+  display: flex;
+  justify-content:center;
+  gap: 5em;
+}
+
+.cropper {
+  width: 8em;
+  height: 8em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+
+}
+
+.cropper img{
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.fake-ppl{
+  color: #F7F7F7;
+  text-align: center;
+  width: 8em;
+}
+
+.fword{
+  font-size: 0.7em;
+}
