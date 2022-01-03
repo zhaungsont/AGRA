@@ -435,3 +435,18 @@ canvas {
   padding: 0 5em 0 5em;
   gap: 3em;
 }
+
+.attributes{
+  color: #6998AB;
+}
+
+.attributes a{
+  color: #6998AB;
+  font-weight: 700;
+}
+
+.four-o-four-content{
+  margin: 5% 20% 10% 20%;
+  color: #F7F7F7;
+  font-size: 2em;
+}
