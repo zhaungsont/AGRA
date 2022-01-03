@@ -16,6 +16,9 @@ font-family: 'Russo One', sans-serif;
 font-family: 'Zen Kurenaido', sans-serif; logo menu
 ALL THE FONTS!!! */
 
+html{
+  background: black;
+}
 
 body {
   background-image: url("/images/sands.jpg");
@@ -102,9 +105,9 @@ user-select: none;
   background-color: white;
 
   color: black;
-  padding-top: 4em;
+  padding-top: 3em;
 
-  padding-bottom: 100vh;
+  padding-bottom: 3em;
 }
 
 /* EXPERIMENTAL */
@@ -367,4 +370,68 @@ canvas {
 
 .fword{
   font-size: 0.7em;
+}
+
+.footer{
+  margin: 0 30%;
+  color: #F7F7F7;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 1em;
+
+}
+
+.footer a{
+  text-decoration: none;
+  color: #F7F7F7;
+  font-weight: 700;
+}
+
+.footer a:hover{
+  background-color: yellow;
+  color: black;
+  transition: 0.4s;
+}
+
+/* CONTACT PAGE */
+
+.about-card{
+  background-color: #1A374D;
+  margin: 5em 20%;
+  color: #F7F7F7;
+  font-size: 1.5em;
+  border-radius: 15px;
+}
+
+/* SUB PAGES */
+
+.home{
+  font-weight: 700;
+}
+
+.current{
+  background-color: #F7F7F7;
+  color: black !important;
+  padding-top: 3em !important;
+  padding-bottom: 3em !important;
+}
+
+.sub-page-spacer{
+  padding: 20vh;
+}
+
+.construction-img{
+  width: 25em;
+}
+
+.constuction-content{
+  color: #F7F7F7;
+}
+
+.constuction-flexbox{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5em 0 5em;
+  gap: 3em;
 }
